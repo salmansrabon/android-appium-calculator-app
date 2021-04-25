@@ -1,5 +1,5 @@
 # Android-Appium-Calculator-App
-##How to run this project
+## How to run this project
 1. clone the project
 2. Start the appium server
 3. Connect mobile device with USB
