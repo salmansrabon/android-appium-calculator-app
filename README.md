@@ -13,3 +13,11 @@
     - c. **Test Kind**: **Class**, **Class**: TestCase, **Use classpath as module**: **MyCalculatorApp.test**
 9. Click on Ok button
 10. Click Run button 
+
+or 
+give this command:
+``` 
+gradle clean test 
+allure generate allure-results --clean -o allure-report
+allure serve allure-results
+```
