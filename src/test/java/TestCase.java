@@ -1,4 +1,5 @@
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,16 +25,11 @@ public class TestCase extends BasePage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @Test
     public void openApp() throws InterruptedException, MalformedURLException {
         btn5.click();
         btnPlus.click();
         btn7.click();
         Assert.assertEquals(btnPreview.getText(),"12");
     }
-    @AfterTest
-    public void tearDown()
-    {
-        driver.quit();
-    }
+
 }

@@ -15,3 +15,8 @@ dependencies {
     testCompile group: 'org.testng', name: 'testng', version: '7.1.0'
     compile group: 'io.appium', name: 'java-client', version: '2.2.0'
 }
+test {
+    useTestNG() {
+        suites "./testng.xml"
+    }
+}
