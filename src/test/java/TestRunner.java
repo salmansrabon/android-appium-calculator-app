@@ -1,3 +1,4 @@
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -11,6 +12,7 @@ public class TestRunner extends BasePage {
     @Test
     public void runApp() throws IOException, InterruptedException {
         objTest=new TestCase();
-        objTest.openApp();
+        String res=objTest.openApp();
+        Assert.assertEquals(res,"12");
     }
 }

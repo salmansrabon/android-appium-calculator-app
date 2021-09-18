@@ -25,11 +25,11 @@ public class TestCase extends BasePage {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    public void openApp() throws InterruptedException, MalformedURLException {
+    public String openApp() throws InterruptedException, MalformedURLException {
         btn5.click();
         btnPlus.click();
         btn7.click();
-        Assert.assertEquals(btnPreview.getText(),"12");
+        return btnPreview.getText();
     }
 
 }
